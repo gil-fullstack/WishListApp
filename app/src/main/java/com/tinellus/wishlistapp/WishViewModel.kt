@@ -15,14 +15,14 @@ class WishViewModel(
     private val wishRepository: WishRepository = Graph.wishRepository
 ):ViewModel() {
     var wishTitleState by mutableStateOf("")
-    var wishDescription by mutableStateOf("")
+    var wishDescriptionState by mutableStateOf("")
 
     fun onWishTitleChanged(newString:String){
         wishTitleState = newString
     }
 
     fun onDescriptionState(newString:String){
-        wishDescription = newString
+        wishDescriptionState = newString
     }
 
     lateinit var getAllWishes: Flow<List<Wish>>

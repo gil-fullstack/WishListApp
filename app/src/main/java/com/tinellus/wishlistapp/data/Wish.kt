@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "wish-table")
 data class Wish(
     @PrimaryKey(autoGenerate = true)
-    val id:Int = 0,
+    val id:Long = 0,
     @ColumnInfo(name = "wish-title")
     val title:String = "",
     @ColumnInfo(name = "wish-desc")
